@@ -1044,9 +1044,9 @@ class Dataset(torch.utils.data.Dataset):
                 for feat in self.field2feats(field):
                     feat.drop(
                         feat.index[
-                            ~self._within_intervals(
+                            sum(~self._within_intervals(
                                 feat[field].values, field_val_interval
-                            )
+                            ))
                         ],
                         inplace=True,
                     )
