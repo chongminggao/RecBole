@@ -14,6 +14,14 @@ docs/build/
 wandb/*
 /ray_log*
 
-/dataset
+*.ipynb_checkpoints
+*.tar.gz
+*.png
+*.pkl
+*.inter
+*.item
+*.user
+*.csv
 *.pdf
+
 
